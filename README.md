@@ -24,4 +24,21 @@ User-Friendly:
 Displays clear instructions and error messages.
 Supports continuous operation until the user chooses to exit.
 
-2@@@)
+
+
+2)File mannager
+This program is a Library Management System implemented in C++ using object-oriented programming and file handling. It allows users to perform various operations on a library, such as adding, issuing, and returning books, as well as saving and loading library data from a file.
+
+Key Features
+1. Book Structure
+A Book structure is used to represent each book in the library.
+Attributes:
+bookID: Unique identifier for the book.
+bookName: Title of the book.
+bookAuthor: Author of the book.
+isIssued: Boolean flag indicating whether the book is issued or available.
+issuedTo: Name of the person who issued the book.
+Includes a method showBookDetails() to display a book's information.
+
+32. Dynamic Library Management
+The library is stored as a vector of Book objects, allowing for dynamic and efficient management of books.
