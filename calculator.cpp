@@ -12,14 +12,16 @@ void divide();
 void squareRoot();
 void power();
 
-int main() {
+int main() 
+{
     int choice;
     do {
         // Display Menu
         displayMenu();
         cin >> choice;
 
-        if (cin.fail()) {
+        if (cin.fail()) 
+        {
             cin.clear(); // Clear the error flag
             cin.ignore(10000, '\n'); // Discard invalid input
             cout << "Invalid input. Please enter a number.\n";
@@ -42,7 +44,8 @@ int main() {
 }
 
 // Function to display the calculator menu
-void displayMenu() {
+void displayMenu() 
+{
     cout << "\n=========================\n";
     cout << " Calculator Menu\n";
     cout << "=========================\n";
@@ -57,12 +60,14 @@ void displayMenu() {
 }
 
 // Function to perform addition
-void add() {
+void add() 
+{
     double num1, num2;
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
 
-    if (cin.fail()) {
+    if (cin.fail()) 
+    {
         cout << "Error: Invalid input. Please enter numeric values.\n";
         cin.clear();
         cin.ignore(10000, '\n');
@@ -73,12 +78,14 @@ void add() {
 }
 
 // Function to perform subtraction
-void subtract() {
+void subtract() 
+{
     double num1, num2;
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
 
-    if (cin.fail()) {
+    if (cin.fail()) 
+    {
         cout << "Error: Invalid input. Please enter numeric values.\n";
         cin.clear();
         cin.ignore(10000, '\n');
@@ -89,12 +96,14 @@ void subtract() {
 }
 
 // Function to perform multiplication
-void multiply() {
+void multiply() 
+{
     double num1, num2;
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
 
-    if (cin.fail()) {
+    if (cin.fail())
+    {
         cout << "Error: Invalid input. Please enter numeric values.\n";
         cin.clear();
         cin.ignore(10000, '\n');
@@ -105,12 +114,14 @@ void multiply() {
 }
 
 // Function to perform division
-void divide() {
+void divide() 
+{
     double num1, num2;
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
 
-    if (cin.fail()) {
+    if (cin.fail()) 
+    {
         cout << "Error: Invalid input. Please enter numeric values.\n";
         cin.clear();
         cin.ignore(10000, '\n');
@@ -126,19 +137,22 @@ void divide() {
 }
 
 // Function to calculate square root
-void squareRoot() {
+void squareRoot() 
+{
     double num;
     cout << "Enter a number: ";
     cin >> num;
 
-    if (cin.fail()) {
+    if (cin.fail()) 
+    {
         cout << "Error: Invalid input. Please enter a numeric value.\n";
         cin.clear();
         cin.ignore(10000, '\n');
         return;
     }
 
-    if (num < 0) {
+    if (num < 0) 
+    {
         cout << "Error: Square root of a negative number is not defined.\n";
         return;
     }
@@ -147,12 +161,14 @@ void squareRoot() {
 }
 
 // Function to calculate power (x^y)
-void power() {
+void power() 
+{
     double base, exponent;
     cout << "Enter base and exponent: ";
     cin >> base >> exponent;
 
-    if (cin.fail()) {
+    if (cin.fail()) 
+    {
         cout << "Error: Invalid input. Please enter numeric values.\n";
         cin.clear();
         cin.ignore(10000, '\n');
